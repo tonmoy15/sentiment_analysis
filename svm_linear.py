@@ -25,6 +25,7 @@ vectorizer = TfidfVectorizer(min_df = 5,
 
 train_vectors = vectorizer.fit_transform(trainData['Content'])
 test_vectors = vectorizer.transform(testData['Content'])
+train_vectors
 
 # Perform classification with SVM, kernel=linear
 classifier_linear = svm.SVC(kernel='linear')
